@@ -43,7 +43,7 @@ DEFAULT_PLAN = getattr(
 TRIAL_PERIOD_FOR_USER_CALLBACK = getattr(
     settings,
     "PAYMENTS_TRIAL_PERIOD_FOR_USER_CALLBACK",
-    7
+    None
 )
 if isinstance(TRIAL_PERIOD_FOR_USER_CALLBACK, basestring):
     TRIAL_PERIOD_FOR_USER_CALLBACK = load_path_attr(
