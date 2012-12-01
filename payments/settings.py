@@ -28,7 +28,7 @@ STRIPE_PUBLIC_KEY = settings.STRIPE_PUBLIC_KEY
 INVOICE_FROM_EMAIL = getattr(
     settings,
     "PAYMENTS_INVOICE_FROM_EMAIL",
-    "billing@example.com"
+    "support@alo68.com"
 )
 PAYMENTS_PLANS = getattr(settings, "PAYMENTS_PLANS", {})
 PLAN_CHOICES = [
@@ -43,7 +43,7 @@ DEFAULT_PLAN = getattr(
 TRIAL_PERIOD_FOR_USER_CALLBACK = getattr(
     settings,
     "PAYMENTS_TRIAL_PERIOD_FOR_USER_CALLBACK",
-    None
+    7
 )
 if isinstance(TRIAL_PERIOD_FOR_USER_CALLBACK, basestring):
     TRIAL_PERIOD_FOR_USER_CALLBACK = load_path_attr(
